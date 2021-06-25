@@ -1,6 +1,6 @@
 #title{
     font-family:'Pacifico', cursive;
-    color: gray;
+    color: #e91e63;
     font-size: 500%;
     text-align: center;
     margin-top: 100px;
@@ -15,11 +15,11 @@
 }
 #us{
     text-align: center;
-    color: gray;
+    color: #e91e63;
 }
 #welcome{
     font-family:'Pacifico', cursive;
-    color: gray;
+    color:#e91e63;
     font-size: 500%;
     text-align: center;
 }
@@ -30,4 +30,8 @@
 }
 #brief{
     text-align: center;
+}
+#button{
+    align-items: center;
+    margin-left: 600px;
 }
