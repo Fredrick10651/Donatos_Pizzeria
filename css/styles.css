@@ -1,17 +1,33 @@
 #title{
     font-family:'Pacifico', cursive;
-    color: white;
+    color: gray;
     font-size: 500%;
     text-align: center;
+    margin-top: 100px;
 }
 .intro{
     border-style: inset;
-    height: auto;
+    height: 100vh;
     background-image: url("../img/karthik-garikapati-oBbTc1VoT-0-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 #us{
     text-align: center;
-    color: white;
+    color: gray;
+}
+#welcome{
+    font-family:'Pacifico', cursive;
+    color: gray;
+    font-size: 500%;
+    text-align: center;
+}
+#about{
+    color: black;
+    text-align: center;
+    font-family:'Pacifico', cursive;
+}
+#brief{
+    text-align: center;
 }
