@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/order.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Your Order</title>
 </head>
 <body>
@@ -23,7 +26,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="new-first-name"><strong>Pizza Type</strong></label>
+                    <h2 id="about">Type of Pizza</h2><br>
                     <select  class="form-control" id="type">
                         <option value="Detroit-Pizza">Detroit Pizza</option>
                         <option value="Neopolitan-pizza">Neopolitan pizza</option>
@@ -38,7 +41,7 @@
             </div><br>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="new-first-name"><strong>Number of Pizzas</strong></label>
+                    <h2 id="about">Number of pizza</h2><br>
                     <input class="form-control" type="number" id="number" name="amount" min="1" value="1" placeholder="Enter a number" >
                 </div>
             </div>
@@ -48,7 +51,7 @@
         <div class="row">
             <div class="col-md-4 toppings">
                 <div class="size">
-                    <h3>Select the size:</h3>
+                    <h2 id="about">size</h2><br>
                     <input type="radio" name="size" value="0"> small<br>
                     <input type="radio" name="size" value="1"> Regular<br>
                     <input type="radio" name="size" value="2"> Medium<br>
@@ -56,15 +59,15 @@
                 </div>
                 <!-- crust -->
                 <div class="crust">
-                    <h3>Select the crusting:</h3>
+                    <h2 id="about">Crust</h2><br>
                     <input type="radio" name="crust" value="50"> Crispy<br>
                     <input type="radio" name="crust" value="200"> Stuffed<br>
                     <input type="radio" name="crust" value="100"> Glottin-free<br>
                     <input type="radio" name="crust" value="0"> None<br>  
                 </div>
-            </div>
+            </div><br>
             <div class="col-md-4 toppings">
-                <h3>Add Meat Toppings:</h3>
+                <h2 id="about">Toppings</h2><br>
         
                 
                 </label>
@@ -86,7 +89,7 @@
                     <input type="checkbox" name="topping" value="100">
                     <span class="checkmark"></span> 
                 </label>
-            </div>
+            </div><br>
           
                
     <div class="container submit">
@@ -107,12 +110,12 @@
             <div class="col-md-6">
                 <form class="delivery">
                     <div class="form-group">
-                        <label for="name">Name:</label>
+                        <h2 id="about">Name</h2><br>
                         <input type="text" class="form-control" id="name" placeholder="Name" required>
                     </div>
                     <!--  -->
                     <div class="form-group">
-                        <label for="location">Location:</label>
+                        <h2 id="about">Location</h2><br>
                         <select class="form-control" id="location">
                             <option class="form-control" value="0">Town</option>
                             <option class="form-control" value="1">Kariobangi North</option>
@@ -124,7 +127,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="Street">Destination</label>
+                        <h2 id="about">Destination</h2><br>
                         <input type="text" class="form-control" id="street" placeholder="Locality" required>
                     </div>
                     <button type="button" class="btn btn-success" id="confirm">Confirm</button>
