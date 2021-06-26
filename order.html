@@ -38,7 +38,7 @@
             </div><br>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="new-first-name"><strong>No. of Pizzas</strong></label>
+                    <label for="new-first-name"><strong>Number of Pizzas</strong></label>
                     <input class="form-control" type="number" id="number" name="amount" min="1" value="1" placeholder="Enter a number" >
                 </div>
             </div>
@@ -49,7 +49,7 @@
             <div class="col-md-4 toppings">
                 <div class="size">
                     <h3>Select the size:</h3>
-                    <input type="radio" name="size" value="0"> Pizza Pie<br>
+                    <input type="radio" name="size" value="0"> small<br>
                     <input type="radio" name="size" value="1"> Regular<br>
                     <input type="radio" name="size" value="2"> Medium<br>
                     <input type="radio" name="size" value="3"> Large<br>  
@@ -66,18 +66,13 @@
             <div class="col-md-4 toppings">
                 <h3>Add Meat Toppings:</h3>
         
-                <label class="container">Extra Macon
-                    <input type="checkbox" name="topping" value="100">
-                    <span class="checkmark"></span>
+                
                 </label>
                 <label class="container topping">Extra Bqb Chicken
                     <input type="checkbox" name="topping" value="100">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container topping">Extra Bqb Steak
-                    <input type="checkbox" name="topping" value="100">
-                    <span class="checkmark"></span>
-                </label>
+               
                 <label class="container topping">Extra Chicken Tikka
                     <input type="checkbox" name="topping" value="100">
                     <span class="checkmark"></span>
@@ -86,48 +81,14 @@
                     <input type="checkbox" name="topping" value="100">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container topping">Extra Peperoni
-                    <input type="checkbox" name="topping" value="100">
-                    <span class="checkmark"></span>
-                </label>
+               
                 <label class="container topping">Extra Peri Peri Chicken
                     <input type="checkbox" name="topping" value="100">
                     <span class="checkmark"></span> 
                 </label>
             </div>
-            <div class="container deliver">
-                <p>Delivery! Just type...<br> press the <strong>Delivery</strong>  button else press Checkout</p>
-                <button type="button" class="btn btn-success" id="delivery">Delivery</button>
-                <button type="submit" class="btn btn-success" id="checkout">Checkout</button>
-            </div><br>
-                </label>
-                <label class="container topping">Extra Mushrooms
-                    <input type="checkbox" name="topping" value="100">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container topping">Extra Olives
-                    <input type="checkbox" name="topping" value="100">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container topping">Extra Onions
-                    <input type="checkbox" name="topping" value="100">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container topping">Extra Pineapple
-                    <input type="checkbox" name="topping" value="100">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container topping">Extra Sweetcorn
-                    <input type="checkbox" name="topping" value="100">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="container topping">Extra Tomatoes
-                    <input type="checkbox" name="topping" value="100">
-                    <span class="checkmark"></span> 
-                </label>
-            </div>
-        </div>
-    </div><br>
+          
+               
     <div class="container submit">
         <div class="subtotal">
             <button type="submit" class="btn btn-danger" id="submit">Add To Cart</button><br>
@@ -137,7 +98,7 @@
         </div>
     </div><br>
     <div class="container deliver">
-        <p>Delivery! Just type...<br> press the <strong>Delivery</strong>  button else press Checkout</p>
+        <p>Delivery! Just press...<br> press the <strong>Delivery</strong>  button else press Checkout</p>
         <button type="button" class="btn btn-success" id="delivery">Delivery</button>
         <button type="submit" class="btn btn-success" id="checkout">Checkout</button>
     </div><br>
@@ -146,15 +107,12 @@
             <div class="col-md-6">
                 <form class="delivery">
                     <div class="form-group">
-                        <label for="name">Enter your Name:</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name" required>
                     </div>
+                    <!--  -->
                     <div class="form-group">
-                        <label for="new-first-name">Enter your Contact:</label>
-                        <input type="Number" class="form-control" id="contact" placeholder="contact" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="location">Enter your Location:</label>
+                        <label for="location">Location:</label>
                         <select class="form-control" id="location">
                             <option class="form-control" value="0">Town</option>
                             <option class="form-control" value="1">Kariobangi North</option>
@@ -166,8 +124,8 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="Street">Enter your Street/Hse No:</label>
-                        <input type="text" class="form-control" id="street" placeholder="HSE No / Street Name" required>
+                        <label for="Street">Destination</label>
+                        <input type="text" class="form-control" id="street" placeholder="Locality" required>
                     </div>
                     <button type="button" class="btn btn-success" id="confirm">Confirm</button>
                     <div>
