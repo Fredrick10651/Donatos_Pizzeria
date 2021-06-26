@@ -29,10 +29,10 @@ h1{
     border-radius: 5%;
   }
   .crust{
-    border-top: brown solid 1px;
+    border-top: white solid 1px;
   }
   .toppings{
-    border: brown solid 1px;
+    border: white solid 1px;
   }
   
   .deliver{
@@ -49,15 +49,18 @@ h1{
     border: thin;
   }
   .card-footer{
-    background-color: brown;
+    background-color: white;
     color: white;
   }
   h4, h3{
-    color: brown;
+    color: white;
     font-size: larger;
     font-family: 'Source Code Pro', monospace;
   }
   alert{
     margin-top: 20%;
   }
-  
+  #about{
+    color: black;
+    font-family:'Pacifico', cursive;
+}  
