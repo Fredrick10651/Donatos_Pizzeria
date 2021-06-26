@@ -1,4 +1,63 @@
-#size{
-    font-family:'Pacifico', cursive;
-    font-size: medium;
-}
+h1{
+    border-bottom: brown solid 5px;
+  }
+  
+  .logo{
+      margin-top: 5%;
+      font-family: 'Diplomata SC', cursive;
+      color: brown;
+      text-align: center;
+  }
+  .carousel-inner{
+      text-align: center;
+      background-color: rgb(8, 8, 8);
+      background-size: cover;
+    }
+    .carousel-inner img {
+      width: 100%;
+      height: 100vh;
+    }
+    h4, h6, .social, .order, .pizza, .submit{
+      text-align: center;
+    }
+    #subtotal{
+      text-align: left;
+    }
+  .gallery img{
+    height: 300px;
+    width: 100%;
+    border-radius: 5%;
+  }
+  .crust{
+    border-top: brown solid 1px;
+  }
+  .toppings{
+    border: brown solid 1px;
+  }
+  
+  .deliver{
+    display: none;
+  }
+  form{
+    display: none;
+  }
+  a, a:hover{
+    color: white;
+    text-decoration: none;
+  }
+  .card{
+    border: thin;
+  }
+  .card-footer{
+    background-color: brown;
+    color: white;
+  }
+  h4, h3{
+    color: brown;
+    font-size: larger;
+    font-family: 'Source Code Pro', monospace;
+  }
+  alert{
+    margin-top: 20%;
+  }
+  
