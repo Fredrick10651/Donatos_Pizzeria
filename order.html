@@ -1,81 +1,184 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/order.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- MD bootstrap Cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <title>Your Order</title>
 </head>
-
-<body class="fluid container">
-    <h2 id="size">TYPE OF PIZZA</h2>
-  <select id="cars" name="cars">
-    <option value="peperoni">Peperoni</option>
-    <option value="megherita">Meherita</option>
-    <option value="">Veg tikka</option>
-    <option value="chicken">Chicken mushroom</option>
-  </select><br><br>
-    <h2 id="size">SIZE OF PIZZA</h2>
-
-    <form>
-        <input type="radio" id="regular" name="fav_language" value="regular">
-        <label for="regular">Small</label><br>
-        <input type="radio" id="medium" name="fav_language" value="medium">
-        <label for="medium">Medium</label><br>
-        <input type="radio" id="large" name="fav_language" value="large">
-        <label for="large">Large</label>
-    </form>
-    <h2 id="size">CRUSTING</h2>
-    <form>
-        <input type="radio" id="crispy" name="fav_language" value="crispy">
-        <label for="crispy">Crispy</label><br>
-            <input type="radio" id="extra" name="fav_language" value="extra">
-            <label for="extra">Extra Bqb Chicken</label><br>
-            <input type="radio" id="peperoni" name="fav_language" value="peperoni">
-            <label for="peperoni">Peperoni</label><br>
-            <input type="radio" id="sandwich" name="fav_language" value="sandwich">
-            <label for="javascript">Sandwich Beef</label><br>
-            <input type="radio" id="macon" name="fav_language" value="macon">
-            <label for="javascript"> Macon</label>
-    </form><BR>
-    <form action="/action_page.php">
-        <h2 id="size">NO OF PIZZAS</h2>
-        <input type="number" id="quantity" name="quantity" min="0" max="100" step="1" value="0">
-
-    </form><BR></BR>
-    <button type="submit" class="btn btn-outline-danger btn-rounded waves-effect">ADD TO CART</a></button>
-
-
-
-
-    <!-- MD bootstrap Cdn -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
-    </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js">
-    </script>
-    <script src="https://cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js"></script>
-    <!-- js link -->
-    <script src="./js/jquery-3.6.0.js"></script>
-    <script src="./js/script.css"></script>
+<body>
+    <div class="container-fluid logo">
+        <!-- <img src="./images/370-3705256_antoninos-pizza-logo-antoninos-pizza-logo-hd-png.png" alt=""> -->
+       
+    </div><br>
+    <div class="container pizza">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="new-first-name"><strong>Pizza Type</strong></label>
+                    <select  class="form-control" id="type">
+                        <option value="Detroit-Pizza">Detroit Pizza</option>
+                        <option value="Neopolitan-pizza">Neopolitan pizza</option>
+                        <option value=">Chicago-pizza">Chicago pizza</option>
+                        <option value="St Louise pizza">St Louise pizza</option>
+                        <option value="Pepperoni">Pepperoni</option>
+                        <option value="Veg Tikka">Veg Tikka</option>
+                        <option value="Cheese-pizza">Cheese pizza</option>
+                        <option value="Meat-pizza">Meat pizza</option>
+                    </select>
+                </div>
+            </div><br>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="new-first-name"><strong>No. of Pizzas</strong></label>
+                    <input class="form-control" type="number" id="number" name="amount" min="1" value="1" placeholder="Enter a number" >
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 toppings">
+                <div class="size">
+                    <h3>Select the size:</h3>
+                    <input type="radio" name="size" value="0"> Pizza Pie<br>
+                    <input type="radio" name="size" value="1"> Regular<br>
+                    <input type="radio" name="size" value="2"> Medium<br>
+                    <input type="radio" name="size" value="3"> Large<br>  
+                </div>
+                <!-- crust -->
+                <div class="crust">
+                    <h3>Select the crusting:</h3>
+                    <input type="radio" name="crust" value="50"> Crispy<br>
+                    <input type="radio" name="crust" value="200"> Stuffed<br>
+                    <input type="radio" name="crust" value="100"> Glottin-free<br>
+                    <input type="radio" name="crust" value="0"> None<br>  
+                </div>
+            </div>
+            <div class="col-md-4 toppings">
+                <h3>Add Meat Toppings:</h3>
+        
+                <label class="container">Extra Macon
+                    <input type="checkbox" name="topping" value="100">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container topping">Extra Bqb Chicken
+                    <input type="checkbox" name="topping" value="100">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container topping">Extra Bqb Steak
+                    <input type="checkbox" name="topping" value="100">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container topping">Extra Chicken Tikka
+                    <input type="checkbox" name="topping" value="100">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container topping" >Extra Sandwich Beef
+                    <input type="checkbox" name="topping" value="100">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container topping">Extra Peperoni
+                    <input type="checkbox" name="topping" value="100">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container topping">Extra Peri Peri Chicken
+                    <input type="checkbox" name="topping" value="100">
+                    <span class="checkmark"></span> 
+                </label>
+            </div>
+            <div class="container deliver">
+                <p>Delivery! Just type...<br> press the <strong>Delivery</strong>  button else press Checkout</p>
+                <button type="button" class="btn btn-success" id="delivery">Delivery</button>
+                <button type="submit" class="btn btn-success" id="checkout">Checkout</button>
+            </div><br>
+                </label>
+                <label class="container topping">Extra Mushrooms
+                    <input type="checkbox" name="topping" value="100">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container topping">Extra Olives
+                    <input type="checkbox" name="topping" value="100">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container topping">Extra Onions
+                    <input type="checkbox" name="topping" value="100">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container topping">Extra Pineapple
+                    <input type="checkbox" name="topping" value="100">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container topping">Extra Sweetcorn
+                    <input type="checkbox" name="topping" value="100">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container topping">Extra Tomatoes
+                    <input type="checkbox" name="topping" value="100">
+                    <span class="checkmark"></span> 
+                </label>
+            </div>
+        </div>
+    </div><br>
+    <div class="container submit">
+        <div class="subtotal">
+            <button type="submit" class="btn btn-danger" id="submit">Add To Cart</button><br>
+            <div class="subtotal">
+                <p id="subtotal"></p>
+            </div>
+        </div>
+    </div><br>
+    <div class="container deliver">
+        <p>Delivery! Just type...<br> press the <strong>Delivery</strong>  button else press Checkout</p>
+        <button type="button" class="btn btn-success" id="delivery">Delivery</button>
+        <button type="submit" class="btn btn-success" id="checkout">Checkout</button>
+    </div><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form class="delivery">
+                    <div class="form-group">
+                        <label for="name">Enter your Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-first-name">Enter your Contact:</label>
+                        <input type="Number" class="form-control" id="contact" placeholder="contact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Enter your Location:</label>
+                        <select class="form-control" id="location">
+                            <option class="form-control" value="0">Town</option>
+                            <option class="form-control" value="1">Kariobangi North</option>
+                            <option class="form-control" value="2">Embakasi</option>
+                            <option class="form-control" value="3">Thika</option>
+                            <option class="form-control" value="4">Juja</option>
+                            <option class="form-control" value="5">Dandora</option>
+                            <option class="form-control" value="6">Kamulu</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Street">Enter your Street/Hse No:</label>
+                        <input type="text" class="form-control" id="street" placeholder="HSE No / Street Name" required>
+                    </div>
+                    <button type="button" class="btn btn-success" id="confirm">Confirm</button>
+                    <div>
+                        <p id="Summary"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="./js/script.js"></script>
 
+</footer>
 </html>
